@@ -77,7 +77,7 @@ The final plot shows ∆V_oc^NR as well as the external luminescence quantum eff
  
 <img src="Images/Figure10.png" width = "700">
 
-**Figure.** Power conversion efficiency (PCE) versus Q<sub>e</sub><sup>LED</sup> and ∆V_oc^NR of a selection of pioneering perovskite device work along with your data overlaid in red.
+**Figure.** Power conversion efficiency (PCE) versus Q<sub>e</sub><sup>LED</sup> and ∆V<sub>OC</sub><sup>NR</sup> of a selection of pioneering perovskite device work along with your data overlaid in red.
  
 ## Access to Saved Data and Results
 To acess the calculated values in the radiative limit, open the variable RESULTS_rad_limit or variable Voc_rad (V). The variable NR_Voc_loss states you non-radiative voltages losses (V), and Q<sub>e</sub><sup>LED</sup> the external luminescence quantum efficiency (%), which is often referred to as the external radiative efficiency or LED quantum efficiency.
