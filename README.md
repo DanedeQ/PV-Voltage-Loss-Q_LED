@@ -13,7 +13,7 @@ SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
 This script determines the maximum achievable open circuit voltage, V<sub>OC</sub><sup>rad</sup>  (i.e. the V<sub>OC</sub> in the radiative limit), of your solar cell from the real optical response of the device by evaluating your external quantum efficiency (EQE) data. In addition, it calculates the non-radiative voltage losses (∆V<sub>OC</sub><sup>NR</sup>) and the corresponding external luminescence quantum efficiency (Q<sub>e</sub><sup>LED</sup>) with the input of the measured V<sub>OC</sub>.
 
 <img src="Images/Figure1.png" width = "700">
-Figure. Screenshot of the main MATLAB script used to calculate V<sub>OC</sub><sup>rad</sup>, ∆V<sub>OC</sub><sup>NR</sup>, and Q<sub>e</sub><sup>LED</sup>.
+**Figure**. Screenshot of the main MATLAB script used to calculate V<sub>OC</sub><sup>rad</sup>, ∆V<sub>OC</sub><sup>NR</sup>, and Q<sub>e</sub><sup>LED</sup>.
 
 ## Checklist for MATLAB Scripts and Data Sets
 In order to use this MATLAB script, you will need the following scripts and data files, which need to be contained in the same file directory.
@@ -23,11 +23,11 @@ In order to use this MATLAB script, you will need the following scripts and data
 	The MATLAB function efficiency.m calculates the efficiency and characteristic parameters of a solar cell under AM1.5g illumination
 	
 3) Data set files:
-- AM15G.dat is the AM1.5 global solar irradiance spectrum which is used as illumination source for the solar cell (first column: energy in eV, second column: photon flux in s<sup>-1</sup>cm<sup>-2</sup>(eV)<sup>-1</sup>)
+-AM15G.dat is the AM1.5 global solar irradiance spectrum which is used as illumination source for the solar cell (first column: energy in eV, second column: photon flux in s<sup>-1</sup>cm<sup>-2</sup>(eV)<sup>-1</sup>)
 <img src="Images/Figure2.png" width = "200"> 
-- The EQE dataset of the perovskite solar cell for which you want to determine the maximum achievable V<sub>OC</sub>. The EQE data (second column) of your solar cell can be in absolute values or percentage-% with respect to energy (eV) or wavelength (nm), which will be in the first column. The data format options are .dat, .txt, .csv, .xls. The dataset will be converted to energy in eV and EQE in absolute values. In this example: EQE_Liu_ACSEnergyLett_19_recipeB.dat 
+-The EQE dataset of the perovskite solar cell for which you want to determine the maximum achievable V<sub>OC</sub>. The EQE data (second column) of your solar cell can be in absolute values or percentage-% with respect to energy (eV) or wavelength (nm), which will be in the first column. The data format options are .dat, .txt, .csv, .xls. The dataset will be converted to energy in eV and EQE in absolute values. In this example: EQE_Liu_ACSEnergyLett_19_recipeB.dat 
 <img src="Images/Figure3.png" width = "200">
-- LiteratureSurvey.xlsx contains a selection of pioneering perovskite device work that is used to generate a plot to reference and compare your device non-radiative voltage loss and external luminescence quantum efficiency on the same thermodynamic scale (irrespective of band gap and composition).
+-LiteratureSurvey.xlsx contains a selection of pioneering perovskite device work that is used to generate a plot to reference and compare your device non-radiative voltage loss and external luminescence quantum efficiency on the same thermodynamic scale (irrespective of band gap and composition).
 
 ## Procedure
 1) Before you run the script you need to enter the filename of the EQE dataset which you want to analyse. Also enter the measured open-circuit voltage V<sub>OC</sub> (V) and the power conversion efficiency PCE (%) of your device.
