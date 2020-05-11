@@ -1,9 +1,9 @@
 ## Standardized Method to Report Perovskite Solar Cell V<sub>OC</sub> Losses and Q<sub>e</sub><sup>LED</sup>
 
-* [Overview](#OverviewofMATLABScriptandFunctionality)
-* [Script Checklist](#ChecklistforMATLABScriptsandDataSets)
+* [Overview](#Overview)
+* [Script Checklist](#Checklist)
 * [Procedure](#Procedure)
-* [Results/Output](#Results/Output)
+* [Results/Output](#Results)
 * [Troubleshooting](#Troubleshooting)
 
 ## Overview of MATLAB Script and Functionality
@@ -66,7 +66,7 @@ The quality of the Urbach tail fit can be evaluated by checking:
 
 **Figure.** Combined external quantum efficiency (blue) and the corresponding electroluminescence (EL) spectrum (red) calculated from the opto-electronic reciprocity theorem. 
  
-## Results/Output
+## Results
 Graphical representations of the calculated results are presented in the final two figures. Using the full extrapolated EQE spectrum, the maximum theoretical V<sub>OC</sub><sup>rad</sup> is calculated and reported in the bar graph shown below. This is compared to your measured device V<sub>OC</sub> and used to calculate the non-radiative voltage loss ∆V<sub>OC</sub><sup>NR</sup> (i.e. V<sub>OC</sub><sup>rad</sup>-V<sub>OC</sub>). This value can be compared to any other perovskite devices independent of composition and bandgap energy.
 <img src="Images/Figure9.png" width = "700">
 
