@@ -1,6 +1,4 @@
-## Standardized Method to Report Perovskite Solar Cell VOC Losses
-Updated on 05/11/2020 by Lisa Krückemeier and Dane W. deQuilettes
-l.krueckemeier@fz-juelich.de and danedeq@mit.edu
+## Standardized Method to Report Perovskite Solar Cell V<sub>OC</sub> Losses
 
 * [Overview](#OverviewofMATLABScriptandFunctionality)
 * [Script Checklist](#ChecklistforMATLABScriptsandDataSets)
