@@ -1,12 +1,12 @@
 ## Standardized Method to Report Perovskite Solar Cell V<sub>OC</sub> Losses and Q<sub>e</sub><sup>LED</sup>
 
-* [Overview](#Overview)
+* [Overview of Script and Functionality](#Overview)
 * [Script Checklist](#Checklist)
 * [Procedure](#Procedure)
 * [Results/Output](#Results)
 * [Troubleshooting](#Troubleshooting)
 
-## Overview of MATLAB Script and Functionality
+## Overview
 
 SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
 
@@ -16,7 +16,7 @@ This script determines the maximum achievable open circuit voltage, V<sub>OC</su
 
 **Figure**. Screenshot of the main MATLAB script used to calculate V<sub>OC</sub><sup>rad</sup>, ∆V<sub>OC</sub><sup>NR</sup>, and Q<sub>e</sub><sup>LED</sup>.
 
-## Checklist for MATLAB Scripts and Data Sets
+## Checklist
 In order to use this MATLAB script, you will need the following scripts and data files, which need to be contained in the same file directory.
 1) Main MATLAB script: SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
 
