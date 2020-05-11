@@ -12,8 +12,8 @@ SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
 
 This script determines the maximum achievable open circuit voltage, V_oc^rad (i.e. the V_OC in the radiative limit), of your solar cell from the real optical response of the device by evaluating your external quantum efficiency (EQE) data. In addition, it calculates the non-radiative voltage losses (∆V_oc^NR) and the corresponding external luminescence quantum efficiency (Q_e^LED) with the input of the measured V_OC.
 
-![Figure](./Figure1.jpg)
-Screenshot of the main MATLAB script used to calculate V_oc^rad, ∆V_oc^NR, and〖 Q〗_e^LED.
+<img src="images/Figure1.png">
+Figure. Screenshot of the main MATLAB script used to calculate V_oc^rad, ∆V_oc^NR, and〖 Q〗_e^LED.
 
 
 
