@@ -22,38 +22,32 @@ Figure. Screenshot of the main MATLAB script used to calculate V_oc^rad, ∆V_oc
 
 ## Checklist for MATLAB Scripts and Data Sets
 In order to use this MATLAB script, you will need the following scripts and data files, which need to be contained in the same file directory.
-	Main MATLAB script: SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
+1) Main MATLAB script: SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
 
-	Additional MATLAB function:
- 
+2) Additional MATLAB function:
 	The MATLAB function efficiency.m calculates the efficiency and characteristic parameters of a solar cell under AM1.5g illumination
-
-	Data set files:
-
-	AM15G.dat is the AM1.5 global solar irradiance spectrum which is used as illumination source for the solar cell 
-(first column: energy in eV, second column: photon flux in s-1cm-2(eV)-1)
+	
+3) Data set files:
+	AM15G.dat is the AM1.5 global solar irradiance spectrum which is used as illumination source for the solar cell (first column: energy in eV, second column: photon flux in s-1cm-2(eV)-1)
  
+4) The EQE dataset of the perovskite solar cell for which you want to determine the maximum achievable VOC. The EQE data (second column) of your solar cell can be in absolute values or percentage-% with respect to energy (eV) or wavelength (nm), which will be in the first column. The data format options are .dat, .txt, .csv, .xls. The dataset will be converted to energy in eV and EQE in absolute values. In this example: EQE_Liu_ACSEnergyLett_19_recipeB.dat 
 
-	The EQE dataset of the perovskite solar cell for which you want to determine the maximum achievable VOC. The EQE data (second column) of your solar cell can be in absolute values or percentage-% with respect to energy (eV) or wavelength (nm), which will be in the first column. The data format options are .dat, .txt, .csv, .xls. The dataset will be converted to energy in eV and EQE in absolute values. In this example: EQE_Liu_ACSEnergyLett_19_recipeB.dat 
+5) LiteratureSurvey.xlsx contains a selection of pioneering perovskite device work that is used to generate a plot to reference and compare your device non-radiative voltage loss and external luminescence quantum efficiency on the same thermodynamic scale (irrespective of band gap and composition).
 
-
-	LiteratureSurvey.xlsx contains a selection of pioneering perovskite device work that is used to generate a plot to reference and compare your device non-radiative voltage loss and external luminescence quantum efficiency on the same thermodynamic scale (irrespective of band gap and composition).
-
-
- 
 ## Procedure
-	Before you run the script you need to enter the filename of the EQE dataset which you want to analyse. Also enter the measured open-circuit voltage Voc (V) and the power conversion efficiency PCE (%) of your device.
+1) Before you run the script you need to enter the filename of the EQE dataset which you want to analyse. Also enter the measured open-circuit voltage Voc (V) and the power conversion efficiency PCE (%) of your device.
  
 Figure. Screenshot of script showing where data and values should be input (red box).
-	Run the Script.  
-A figure window pops up showing the EQE data over energy on a semi-logarithmic scale. Here you will need to select the energy region across the absorption onset (red square below) over which an Urbach tail will be fit. 
-	Zoom in. 
+
+2) Run the Script. A figure window pops up showing the EQE data over energy on a semi-logarithmic scale. Here you will need to select the energy region across the absorption onset (red square below) over which an Urbach tail will be fit. 
+
+3) Zoom in. 
  
 Figure. Measured device raw EQE data as a function of energy (eV).
-Pick two data points with your mouse by holding ALT or SHIFT.
-	First select a data point at the lower enegy end of the bandgap tail. 
-	Next, select a second data point at the start of the bandgap tail (higher energy). 
-	Then press enter or (almost) any other key to continue.
+4) Pick two data points with your mouse by holding ALT or SHIFT.
+	i. First select a data point at the lower enegy end of the bandgap tail. 
+	ii. Next, select a second data point at the start of the bandgap tail (higher energy). 
+	iii. Then press enter or (almost) any other key to continue.
 
  
 Figure. Zoomed in window of the measured EQE data versus energy (eV) and an example of selecting data points over which to fit the Urbach tail.
