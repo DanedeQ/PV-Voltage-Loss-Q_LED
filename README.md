@@ -1,4 +1,4 @@
-## Standardized Method to Report Perovskite Solar Cell V<sub>OC</sub> Losses
+## Standardized Method to Report Perovskite Solar Cell V<sub>OC</sub> Losses and Q<sub>e</sub><sup>LED</sup>
 
 * [Overview](#OverviewofMATLABScriptandFunctionality)
 * [Script Checklist](#ChecklistforMATLABScriptsandDataSets)
