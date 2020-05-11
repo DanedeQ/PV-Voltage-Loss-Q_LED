@@ -102,7 +102,7 @@ To acess the calculated values in the radiative limit, open the variable RESULTS
 
 Written by Lisa Krueckemeier and Dane deQuilettes. Feel free to email me with any comments, suggestions, or to fix any bugs and push the corrections back to me. 
 
-Also, if there is any low voltage loss device data that you believe should be included in LiteratureSurvey.xls, please update and push the file or reach out!
+** Also, if there is any low voltage loss device data that you believe should be included in LiteratureSurvey.xls, please update and push the file or reach out!
 
 Dane W. deQuilettes - danedeq@mit.edu
 
