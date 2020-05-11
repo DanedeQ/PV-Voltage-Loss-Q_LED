@@ -36,7 +36,7 @@ In order to use this MATLAB script, you will need the following scripts and data
 1) Before you run the script you need to enter the filename of the EQE dataset which you want to analyse. Also enter the measured open-circuit voltage V<sub>OC</sub> (V) and the power conversion efficiency PCE (%) of your device.
 <img src="Images/Figure4.png" width = "700">
 
-**Figure.** Screenshot of script showing where data and values should be input (red box).
+**Figure.** Screenshot of script showing where data and values should be input.
 2) Run the Script. A figure window pops up showing the EQE data over energy on a semi-logarithmic scale. Here you will need to select the energy region across the absorption onset (red square below) over which an Urbach tail will be fit. 
 3) Zoom in. 
 <img src="Images/Figure5.png" width = "700">
@@ -75,22 +75,21 @@ The final plot shows ∆V_oc^NR as well as the external luminescence quantum eff
 Access to Saved Data and Results
 To acess the calculated values in the radiative limit, open the variable RESULTS_rad_limit or variable Voc_rad (V). The variable NR_Voc_loss states you non-radiative voltages losses (V), and Q<sub>e</sub><sup>LED</sup> the external luminescence quantum efficiency (%), which is often referred to as the external radiative efficiency or LED quantum efficiency.
 
-<img src="Images/Figure11.png" width = "700">
+<img src="Images/Figure10p5.png" width = "700">
 
 **Figure.** Screenshot of the RESULTS_rad_limit table showing the calculated V<sub>OC</sub><sup>rad</sup>.
  
 ## Troubleshooting
 - The script can also be tested with the exemplary dataset (EQE_Liu_ACSEnergyLett_19_recipeB.dat) to test whether your EQE code is importing correctly.
 
-- If the combined quantum efficiency data does not look correct, you can change the transition point (EQE_level) manually. The point should be somewhere where your measured EQE has a high signal-to-noise ratio. You can switch manually to ‘yes‘, otherwise the transition point will be picked automatically. 
-<img src="Images/Figure12.png" width = "400"> 
+- If the combined quantum efficiency data does not look correct, you can change the transition point (EQE_level) manually. The point should be somewhere where your measured EQE has a high signal-to-noise ratio. You can switch manually to ‘yes‘, otherwise the transition point will be picked automatically.
+<img src="Images/Figure11.png" width = "700">
 
 - Data is interpolated to get more data points in the energy range at the bandgap tail. Experimental datasets often have only a few points in this range and the calculation is more precise with higher energy resolution. If you don’t want to use this interpolation, uncomment lines 98-101.
- 
-<img src="Images/Figure13.png" width = "700">
+<img src="Images/Figure12.png" width = "400"> 
 
 **Figure.** Measured EQE data (blue) versus energy and an interpolated version of the data set (red). 
- 
+<img src="Images/Figure13.png" width = "700">
 
 	
 
