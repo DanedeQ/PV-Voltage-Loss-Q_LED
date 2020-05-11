@@ -73,7 +73,7 @@ Graphical representations of the calculated results are presented in the final t
 
 **Figure.** Bar chart of your device ∆V<sub>OC</sub>, V<sub>OC</sub><sup>rad</sup>, and ∆V<sub>OC</sub><sup>NR</sup>.
 
-The final plot shows ∆V_oc^NR as well as the external luminescence quantum efficiency (Q<sub>e</sub><sup>LED</sup>), compared to a selection of pioneering perovskite device papers from literature.** This allows you to directly compare your device voltage and implied external luminescence efficiency to the best in the field. If you do not want to script to perform this comparsion, set comparsion_literature='no'.
+The final plot shows ∆V<sub>OC</sub><sup>NR</sup> as well as the external luminescence quantum efficiency (Q<sub>e</sub><sup>LED</sup>), compared to a selection of pioneering perovskite device papers from literature.** This allows you to directly compare your device voltage and implied external luminescence efficiency to the best in the field. If you do not want to script to perform this comparsion, set comparsion_literature='no'.
  
 <img src="Images/Figure10.png" width = "700">
 
