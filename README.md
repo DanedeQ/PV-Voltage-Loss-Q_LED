@@ -10,15 +10,10 @@
 
 SCRIPT_Vocrad_EQE_fit_Urbachtail_NRVocLoss_QLED.m
 
-This script determines the maximum achievable open circuit voltage, V_oc^rad (i.e. the V_OC in the radiative limit), of your solar cell from the real optical response of the device by evaluating your external quantum efficiency (EQE) data. In addition, it calculates the non-radiative voltage losses (∆V_oc^NR) and the corresponding external luminescence quantum efficiency (Q_e^LED) with the input of the measured V_OC.
+This script determines the maximum achievable open circuit voltage, V<sub>OC</sub><sup>rad</sup>  (i.e. the V<sub>OC</sub> in the radiative limit), of your solar cell from the real optical response of the device by evaluating your external quantum efficiency (EQE) data. In addition, it calculates the non-radiative voltage losses (∆V<sub>OC</sub><sup>NR</sup>) and the corresponding external luminescence quantum efficiency (Q<sub>e</sub><sup>LED</sup>) with the input of the measured V<sub>OC</sub>.
 
-<img src="Images/Figure1.png">
-Figure. Screenshot of the main MATLAB script used to calculate V_oc^rad, ∆V_oc^NR, and〖 Q〗_e^LED.
-
-
-
-
-
+<img src="Images/Figure1.png" width = "700">
+Figure. Screenshot of the main MATLAB script used to calculate V<sub>OC</sub><sup>rad</sup>, ∆V<sub>OC</sub><sup>NR</sup>, and Q<sub>e</sub><sup>LED</sup>.
 
 ## Checklist for MATLAB Scripts and Data Sets
 In order to use this MATLAB script, you will need the following scripts and data files, which need to be contained in the same file directory.
@@ -28,14 +23,14 @@ In order to use this MATLAB script, you will need the following scripts and data
 	The MATLAB function efficiency.m calculates the efficiency and characteristic parameters of a solar cell under AM1.5g illumination
 	
 3) Data set files:
-	AM15G.dat is the AM1.5 global solar irradiance spectrum which is used as illumination source for the solar cell (first column: energy in eV, second column: photon flux in s-1cm-2(eV)-1)
+	AM15G.dat is the AM1.5 global solar irradiance spectrum which is used as illumination source for the solar cell (first column: energy in eV, second column: photon flux in s<sup>-1</sup>-1cm<sup>-2</sup>(eV)<sup>-1</sup>)
  
-4) The EQE dataset of the perovskite solar cell for which you want to determine the maximum achievable VOC. The EQE data (second column) of your solar cell can be in absolute values or percentage-% with respect to energy (eV) or wavelength (nm), which will be in the first column. The data format options are .dat, .txt, .csv, .xls. The dataset will be converted to energy in eV and EQE in absolute values. In this example: EQE_Liu_ACSEnergyLett_19_recipeB.dat 
+4) The EQE dataset of the perovskite solar cell for which you want to determine the maximum achievable V<sub>OC</sub>. The EQE data (second column) of your solar cell can be in absolute values or percentage-% with respect to energy (eV) or wavelength (nm), which will be in the first column. The data format options are .dat, .txt, .csv, .xls. The dataset will be converted to energy in eV and EQE in absolute values. In this example: EQE_Liu_ACSEnergyLett_19_recipeB.dat 
 
 5) LiteratureSurvey.xlsx contains a selection of pioneering perovskite device work that is used to generate a plot to reference and compare your device non-radiative voltage loss and external luminescence quantum efficiency on the same thermodynamic scale (irrespective of band gap and composition).
 
 ## Procedure
-1) Before you run the script you need to enter the filename of the EQE dataset which you want to analyse. Also enter the measured open-circuit voltage Voc (V) and the power conversion efficiency PCE (%) of your device.
+1) Before you run the script you need to enter the filename of the EQE dataset which you want to analyse. Also enter the measured open-circuit voltage V<sub>OC</sub> (V) and the power conversion efficiency PCE (%) of your device.
  
 Figure. Screenshot of script showing where data and values should be input (red box).
 
@@ -61,17 +56,17 @@ Figure. Combined quantum efficiency data of the measured EQE (red circles) and a
 Figure. Combined external quantum efficiency   (blue) and the corresponding electroluminescence (EL) spectrum (red) calculated from the opto-electronic reciprocity theorem. 
  
 ## Results/Output
-Graphical representations of the calculated results are presented in the final two figures. Using the full extrapolated EQE spectrum, the maximum theoretical V_OC (V_oc^rad) is calculated and reported in the bar graph shown below. This is compared to your measured device V_OC and used to calculate the non-radiative voltage loss ∆V_oc^NR (i.e. V_oc^rad-V_OC). This value can be compared to any other perovskite devices independent of composition and bandgap energy.
- Figure. Bar chart of your device V_OC, V_oc^rad, and ∆V_oc^NR.
-The final plot shows ∆V_oc^NR as well as the external luminescence quantum efficiency (Q_e^LED), compared to a selection of pioneering perovskite device papers from literature.** This allows you to directly compare your device voltage and implied external luminescence efficiency to the best in the field. If you do not want to script to perform this comparsion, set comparsion_literature='no'.
+Graphical representations of the calculated results are presented in the final two figures. Using the full extrapolated EQE spectrum, the maximum theoretical V<sub>OC</sub><sup>rad</sup> is calculated and reported in the bar graph shown below. This is compared to your measured device V<sub>OC</sub> and used to calculate the non-radiative voltage loss ∆V<sub>OC</sub><sup>NR</sup> (i.e. V<sub>OC</sub><sup>rad</sup>-V<sub>OC</sub>). This value can be compared to any other perovskite devices independent of composition and bandgap energy.
+ Figure. Bar chart of your device ∆V<sub>OC</sub>, V<sub>OC</sub><sup>rad</sup>, and ∆V<sub>OC</sub><sup>NR</sup>.
+The final plot shows ∆V_oc^NR as well as the external luminescence quantum efficiency (Q<sub>e</sub><sup>LED</sup>), compared to a selection of pioneering perovskite device papers from literature.** This allows you to directly compare your device voltage and implied external luminescence efficiency to the best in the field. If you do not want to script to perform this comparsion, set comparsion_literature='no'.
  
-Figure. Power conversion efficiency (PCE) versus Q_e^LED and ∆V_oc^NR of a selection of pioneering perovskite device work along with your data overlaid in red.
+Figure. Power conversion efficiency (PCE) versus Q<sub>e</sub><sup>LED</sup> and ∆V_oc^NR of a selection of pioneering perovskite device work along with your data overlaid in red.
  
 Access to Saved Data and Results
-To acess the calculated values in the radiative limit, open the variable RESULTS_rad_limit or variable Voc_rad (V). The variable NR_Voc_loss states you non-radiative voltages losses (V), and Q_e_LED the external luminescence quantum efficiency (%), which is often referred to as the external radiative efficiency or LED quantum efficiency.
+To acess the calculated values in the radiative limit, open the variable RESULTS_rad_limit or variable Voc_rad (V). The variable NR_Voc_loss states you non-radiative voltages losses (V), and Q<sub>e</sub><sup>LED</sup> the external luminescence quantum efficiency (%), which is often referred to as the external radiative efficiency or LED quantum efficiency.
 
  
-Figure. Screenshot of the RESULTS_rad_limit table showing the calculated V_oc^rad.
+Figure. Screenshot of the RESULTS_rad_limit table showing the calculated V<sub>OC</sub><sup>rad</sup>.
  
 ## Troubleshooting
 - The script can also be tested with the exemplary dataset (EQE_Liu_ACSEnergyLett_19_recipeB.dat) to test whether your EQE code is importing correctly.
