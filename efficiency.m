@@ -3,7 +3,7 @@ function [Jsc_SQ_m,Jo_SQ_m,Voc_SQ,FF_SQ,eff_SQ]=efficiency(E,Q_e)
 %% Constants
 global VT
 q=1.602176462e-19;                      % [As], elementary charge
-VT=25.8e-3;                             % [V], 25.8mV thermal voltage at 300K
+%VT=25.8e-3;                             % [V], 25.8mV thermal voltage at 300K
 %VT=27.6e-3;                            % [V], thermal voltage at 320K
 h=6.62606876e-34;                       % [Js], Planck's constant
 %h=4.135667662e-15;                     % [eVs], Planck's constant
