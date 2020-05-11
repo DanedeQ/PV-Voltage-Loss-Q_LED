@@ -5,6 +5,7 @@
 * [Procedure](#Procedure)
 * [Results/Output](#Results)
 * [Troubleshooting](#Troubleshooting)
+* [Contact](#Contact)
 
 ## Overview
 
@@ -97,5 +98,9 @@ To acess the calculated values in the radiative limit, open the variable RESULTS
 **Figure.** Measured EQE data (blue) versus energy and an interpolated version of the data set (red). 
 <img src="Images/Figure13.png" width = "700">
 
-	
+## Contact
+
+Written by Lisa Krueckemeier and Dane deQuilettes. Feel free to email me with any comments, suggestions, or to fix any bugs and push the corrections back to me. 
+
+Dane W. deQuilettes - danedeq@mit.edu
 
